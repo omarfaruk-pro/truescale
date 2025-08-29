@@ -552,12 +552,16 @@ header {
 }
 
 /* review */
+.review {
+    overflow-x: hidden;
+}
+
 .trustpilot {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .truspilot_stars {
@@ -575,10 +579,13 @@ header {
     color: var(--black);
 }
 
-.review_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.4rem;
+.reviewSlider {
+    padding-block: 3rem;
+    overflow: visible;
+}
+
+.reviewSlider .swiper-slide {
+    height: auto;
 }
 
 .review_card {
