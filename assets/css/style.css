@@ -87,7 +87,8 @@ img {
     text-align: center;
     transition: 0.3s;
 }
-.common_btn:hover{
+
+.common_btn:hover {
     background-color: var(--black);
     color: #fff;
 }
@@ -104,7 +105,8 @@ img {
     border: .1rem solid var(--primaryColor);
     transition: 0.3s;
 }
-.common_btn_2:hover{
+
+.common_btn_2:hover {
     background-color: var(--primaryColor);
     color: #fff;
 }
@@ -152,9 +154,11 @@ header {
     align-items: center;
     border-bottom: .1rem solid rgba(255, 255, 255, .2);
 }
+
 .header_content nav ul {
     display: flex;
 }
+
 .header_content nav a {
     padding-inline: 1.2rem;
     display: block;
@@ -162,10 +166,12 @@ header {
     font-size: 1.4rem;
     transition: 0.3s;
 }
+
 .header_content nav a:hover,
-.header_content nav a.active{
+.header_content nav a.active {
     color: var(--primaryColor);
 }
+
 .header_btn {
     display: inline-block;
     padding: 1.2rem 2.2rem;
@@ -177,7 +183,8 @@ header {
     line-height: 1.29;
     transition: 0.3s;
 }
-.header_btn:hover{
+
+.header_btn:hover {
     background-color: #fff;
     color: var(--dark);
 }
@@ -189,6 +196,7 @@ header {
     color: #fff;
     padding: 17.4rem 0 14rem;
 }
+
 .banner::before {
     content: '';
     position: absolute;
@@ -199,6 +207,7 @@ header {
     background: linear-gradient(270deg, rgba(21, 26, 29, 0) 0%, rgba(21, 26, 29, 0) 40%, rgba(21, 26, 29, 0.9) 60%, #151B1D 100%);
     z-index: -2;
 }
+
 .banner::after {
     content: '';
     position: absolute;
@@ -212,6 +221,7 @@ header {
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
 .banner>img {
     position: absolute;
     z-index: -3;
@@ -221,28 +231,33 @@ header {
     top: 0;
     right: 0;
 }
-.home_row{
+
+.home_row {
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: flex-end;
 }
-.home_content{
+
+.home_content {
     max-width: 51rem;
 }
-.home_content h1{
+
+.home_content h1 {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.04em;
     margin: 1.6rem 0;
 }
-.home_content h1 span{
+
+.home_content h1 span {
     font-family: var(--secondaryFont);
     font-size: 120.83%;
     font-weight: 500;
     font-style: italic;
 }
-.home_content ul li{
+
+.home_content ul li {
     position: relative;
     padding-left: 2.8rem;
     background-image: url(../images/check.svg);
@@ -253,40 +268,49 @@ header {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.home_content .common_btn{
+
+.home_content .common_btn {
     width: 100%;
     max-width: 35rem;
     margin-top: 2.2rem;
 }
-.home_content .common_btn:hover{
+
+.home_content .common_btn:hover {
     background-color: #fff;
     color: var(--black);
 }
-.home_content p{
+
+.home_content p {
     color: #fff;
     margin-top: 1.6rem;
     font-weight: 300;
     font-size: 1.4rem;
 }
-.home_content p strong{
+
+.home_content p strong {
     font-weight: 700;
 }
-.trustpilot-home{
+
+.trustpilot-home {
     display: flex;
     column-gap: 1.2rem;
     font-size: 1.8rem;
-    font-weight:  600;
+    font-weight: 600;
     align-items: center;
 }
-.trustpilot-home .trust-star{
+
+.trustpilot-home .trust-star {
     height: 2.4rem;
 }
-.trustpilot-home .trust-logo{
+
+.trustpilot-home .trust-logo {
     height: 1.6rem;
 }
-img{
+
+img {
     vertical-align: middle;
 }
+
 .verified_box {
     display: flex;
     flex-direction: row;
@@ -300,15 +324,18 @@ img{
     max-width: 43.8rem;
     margin-left: auto;
 }
-.verified_box img{
+
+.verified_box img {
     width: 3.2rem;
     flex-shrink: 0;
 }
-.verified_box .h5{
+
+.verified_box .h5 {
     font-size: 2rem;
     font-weight: 600;
 }
-.verified_box p{
+
+.verified_box p {
     color: #F1F0E3;
     font-weight: 300;
 }
@@ -594,15 +621,20 @@ img{
 .smarter_slider_wrap {
     margin-top: auto;
     margin-bottom: 4rem;
-    padding-inline: 4rem;
 }
 
 .smarterSlider {
     overflow: visible;
 }
 
+.smarterSlider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
 .smarterSlider .swiper-slide {
     height: auto;
+    width: auto;
+    max-width: 36rem;
 }
 
 /* step */
@@ -800,11 +832,16 @@ img{
 .reviewSlider {
     padding-block: 3rem;
     overflow: visible;
-    padding-inline: 22rem;
+}
+
+.reviewSlider .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
 .reviewSlider .swiper-slide {
     height: auto;
+    width: auto;
+    max-width: 37rem;
 }
 
 .review_card {
@@ -1008,6 +1045,7 @@ footer ul a {
 .copyright {
     text-align: right;
 }
+
 .footer_btn {
     display: inline-block;
     padding: 1.2rem 2.2rem;
@@ -1019,7 +1057,8 @@ footer ul a {
     line-height: 1.29;
     transition: 0.3s;
 }
-.footer_btn:hover{
+
+.footer_btn:hover {
     background-color: #fff;
     color: var(--black);
 }
