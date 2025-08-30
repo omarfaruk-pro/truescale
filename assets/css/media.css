@@ -20,6 +20,147 @@
         display: none !important;
     }
 
+    .banner {
+        padding: 43.3rem 0 8rem;
+    }
+
+    .home_row {
+        grid-template-columns: 1fr;
+    }
+
+    .home_content {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .trustpilot-home {
+        justify-content: center;
+    }
+
+    .home_content ul {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .testimonial_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.2rem;
+    }
+
+    .around_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.6rem;
+    }
+
+    .around_grid>div:last-child {
+        grid-column: span 1;
+    }
+
+    .around_card {
+        padding: 3.2rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .around_card>div:first-child {
+        width: 6.4rem;
+    }
+
+    .around_card>*:last-child {
+        width: calc(100% - 6.4rem);
+    }
+
+    .verified_img {
+        width: 6.4rem;
+    }
+
+    .volume_img {
+        width: 6.4rem;
+    }
+
+    .around_card.long {
+        flex-wrap: wrap;
+        padding: 4rem;
+    }
+
+    .around_card.long>div {
+        width: auto
+    }
+
+    .around_card.long>div:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+    }
+
+    .smarter {
+        height: 90rem;
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        padding-top: 37.2rem;
+    }
+
+    .smarter_img {
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        height: 76.8rem;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .smarter::before {
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        opacity: 1;
+    }
+
+    .smarter_text {
+        text-align: center;
+    }
+
+    .step_grid {
+        flex-direction: column;
+        max-width: 53rem;
+        margin-inline: auto;
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+
+    .step_grid>div {
+        display: flex;
+        max-width: 41rem;
+        width: 100%;
+        gap: 3.2rem;
+    }
+
+    .step_grid>div:nth-child(2) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .arrow_beige_desktop {
+        left: auto;
+        right: -3rem;
+        top: -50%;
+    }
+
+    .arrow_blue_desktop {
+        top: auto;
+        bottom: -4rem;
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .qualify_list {
+        flex-wrap: wrap;
+    }
+
+    .qualify_list>li:first-child {
+        width: 100%;
+        justify-content: center;
+    }
+
     .faq_grid>div:first-child {
         max-width: 100%;
         text-align: center;
@@ -92,6 +233,82 @@
 
     .for_small {
         display: block !important;
+    }
+
+    .testimonial_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+
+    .friction_video {
+        max-height: 36rem;
+        margin-inline: -2.4rem;
+        border-radius: 0;
+    }
+
+    .friction_video .thumbnail_img img {
+        border-radius: 0;
+        max-height: 36rem;
+    }
+
+    .around_card {
+        padding: 2.4rem !important;
+        flex-direction: column;
+    }
+
+    .around_card .for_large {
+        display: block !important;
+    }
+
+    .around_card .for_medium {
+        display: none !important;
+    }
+
+    .around_card.long>div:first-child {
+        flex-direction: column;
+        margin-bottom: 1.6rem;
+    }
+
+    .around_card.long>div:not(:first-child) {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .smarter {
+        height: 72rem;
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        padding-top: 26.5rem;
+    }
+
+    .smarter_img {
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        height: 38rem;
+    }
+
+    .smarter::before {
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        opacity: 1;
+    }
+
+    .step_grid>div {
+        display: block;
+        max-width: 100%;
+        padding-inline: 3rem;
+    }
+
+    .step_grid>div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .step_grid .step_img {
+        margin-inline: auto;
+    }
+
+    .arrow_blue_desktop {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
     }
 
     .reviewSlider .swiper-slide {

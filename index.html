@@ -37,7 +37,11 @@
         <!-- banner -->
         <section class="banner">
             <!-- desktop-img -->
-            <img src="assets/images/hero-desktop.jpg" class="desktop_img" alt="">
+            <picture>
+                <source media="(min-width: 991.2px)" srcset="assets/images/hero-desktop.jpg">
+                <source media="(min-width: 576.2px) and (max-width: 991px)" srcset="assets/images/hero-tablet.jpg">
+                <img src="assets/images/hero-desktop.jpg" class="hero_img" alt="">
+            </picture>
             <div class="container">
                 <div class="home_row">
                     <div class="left_col">
@@ -58,7 +62,7 @@
                             <p><strong>SSN not required •</strong> Apply in under 60 seconds</p>
                         </div>
                     </div>
-                    <div class="right_col">
+                    <div class="right_col for_large">
                         <div class="verified_box">
                             <img src="assets/images/virefied.svg" alt="">
                             <div>
@@ -103,7 +107,7 @@
                             <p>Boutique retailer</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="for_large">
                         <div class="testi_star">
                             <img src="./assets/images/star.svg" alt="">
                             <img src="./assets/images/star.svg" alt="">
@@ -150,22 +154,30 @@
                     <div>
                         <div class="around_card">
                             <h3>0%</h3>
-                            <h4>No collateral required</h4>
-                            <p>We fund your business based on potential, not possessions.</p>
+                            <div>
+                                <h4>No collateral required</h4>
+                                <p>We fund your business based on potential, not possessions.</p>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="around_card">
                             <img src="./assets/images/virefied.svg" class="verified_img" alt="">
-                            <h4>Pay when you can</h4>
-                            <p>Flexible repayment that fits your actual sales.</p>
+                            <div>
+                                <h4>Pay when you can</h4>
+                                <p>Flexible repayment that fits your actual sales.</p>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="around_card">
-                            <h3>$10K - $5M</h3>
-                            <h4>Funding volume</h4>
-                            <p>Whether you’re scaling or just starting to grow — we’ve got you.</p>
+                            <img src="./assets/images/volume.svg" class="for_medium volume_img" alt="">
+                            <h3 class="for_large">$10K - $5M</h3>
+                            <div>
+                                <h4 class="for_large">Funding volume</h4>
+                                <h4 class="for_medium">Funding volume from $10K to $5M </h4>
+                                <p>Whether you’re scaling or just starting to grow — we’ve got you.</p>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -213,8 +225,10 @@
         <!-- smarter -->
         <section class="smarter">
             <picture>
-                <source media="(max-width: 991px)" srcset="./assets/images/every-business-tablet.jpg">
                 <source media="(min-width: 992px)" srcset="./assets/images/every-business-desktop.jpg">
+                <source media="(min-width: 576.2px) and (max-width: 991px)"
+                    srcset="./assets/images/every-business-tablet.jpg">
+                <source media="(max-width: 576px)" srcset="./assets/images/every-business-mobile.jpg">
                 <img src="./assets/images/every-business-desktop.jpg" alt="" class="smarter_img">
             </picture>
             <div class="container">
@@ -310,12 +324,24 @@
                         </div>
                     </div>
                     <div>
-                        <img src="./assets/images/arrow-beige-desktop.svg" class="arrow_beige_desktop" alt="">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="./assets/images/arrow-beige-desktop.svg">
+                            <source media="(min-width:576.2px and max-width: 991px)"
+                                srcset="./assets/images/arrow-beige-tablet.svg">
+                            <source media="(max-width: 576px)" srcset="./assets/images/arrow-beige-mobile.svg">
+                            <img src="./assets/images/arrow-beige-desktop.svg" class="arrow_beige_desktop" alt="">
+                        </picture>
                         <div class="step_img">
                             <img src="./assets/images/offer.svg" alt="" class="step_up">
                             <img src="./assets/images/spot-beige.svg" alt="" class="step_down">
                         </div>
-                        <img src="./assets/images/arrow-blue-desktop.svg" class="arrow_blue_desktop" alt="">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="./assets/images/arrow-blue-desktop.svg">
+                            <source media="(min-width:576.2px and max-width: 991px)"
+                                srcset="./assets/images/arrow-blue-tablet.svg">
+                            <source media="(max-width: 576px)" srcset="./assets/images/arrow-blue-mobile.svg">
+                            <img src="./assets/images/arrow-blue-desktop.svg" class="arrow_blue_desktop" alt="">
+                        </picture>
                         <div>
                             <h4>Get Offers</h4>
                             <ul>
