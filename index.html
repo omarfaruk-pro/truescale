@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header_content">
                 <a href="/" class="logo_wrap"><img class="logo" src="./assets/images/logo-white.svg" alt=""></a>
-                <nav>
+                <nav class="" id="main_nav">
                     <ul>
                         <li><a href="#">How it works</a></li>
                         <li><a href="#">Benefits</a></li>
@@ -25,9 +25,14 @@
                         <li><a href="#">Reviews</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
+                    <a href="#" class="common_btn for_medium">Get my offer</a>
                 </nav>
-                <div>
+                <div class="header_btn_wrap">
                     <a href="#" class="header_btn">Get my offer</a>
+                    <button class="for_medium" id="hamburger">
+                        <img src="./assets/images/burger-white.svg" class="hamburger_img" alt="">
+                        <img src="./assets/images/close-black.svg" class="close_img" alt="">
+                    </button>
                 </div>
             </div>
         </div>
@@ -40,17 +45,19 @@
             <picture>
                 <source media="(min-width: 991.2px)" srcset="assets/images/hero-desktop.jpg">
                 <source media="(min-width: 576.2px) and (max-width: 991px)" srcset="assets/images/hero-tablet.jpg">
+                <source media="(max-width: 576px)" srcset="assets/images/hero-mobile.jpg">
                 <img src="assets/images/hero-desktop.jpg" class="hero_img" alt="">
             </picture>
             <div class="container">
                 <div class="home_row">
                     <div class="left_col">
                         <div class="home_content">
+                            <img src="assets/images/trust_logo.svg" class="trust-logo for_small" alt="">
                             <div class="trustpilot-home">
                                 <span>Excellent</span>
                                 <img src="assets/images/stars-trust.svg" class="trust-star" alt="">
                                 <span>4.9/5</span>
-                                <img src="assets/images/trust_logo.svg" class="trust-logo" alt="">
+                                <img src="assets/images/trust_logo.svg" class="trust-logo " alt="">
                             </div>
                             <h1>Fueling Business Growth. <span>On Your Terms</span></h1>
                             <ul>
@@ -324,24 +331,27 @@
                         </div>
                     </div>
                     <div>
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="./assets/images/arrow-beige-desktop.svg">
-                            <source media="(min-width:576.2px and max-width: 991px)"
-                                srcset="./assets/images/arrow-beige-tablet.svg">
-                            <source media="(max-width: 576px)" srcset="./assets/images/arrow-beige-mobile.svg">
-                            <img src="./assets/images/arrow-beige-desktop.svg" class="arrow_beige_desktop" alt="">
-                        </picture>
                         <div class="step_img">
                             <img src="./assets/images/offer.svg" alt="" class="step_up">
                             <img src="./assets/images/spot-beige.svg" alt="" class="step_down">
                         </div>
+
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="./assets/images/arrow-beige-desktop.svg">
+                            <source media="(min-width:576.2px) and (max-width: 991px)"
+                                srcset="./assets/images/arrow-beige-tablet.svg">
+                            <source media="(max-width: 576px)" srcset="./assets/images/arrow-beige-mobile.svg">
+                            <img src="./assets/images/arrow-beige-desktop.svg" class="arrow_beige_desktop" alt="">
+                        </picture>
+
                         <picture>
                             <source media="(min-width: 992px)" srcset="./assets/images/arrow-blue-desktop.svg">
-                            <source media="(min-width:576.2px and max-width: 991px)"
+                            <source media="(min-width:576.2px) and (max-width: 991px)"
                                 srcset="./assets/images/arrow-blue-tablet.svg">
                             <source media="(max-width: 576px)" srcset="./assets/images/arrow-blue-mobile.svg">
                             <img src="./assets/images/arrow-blue-desktop.svg" class="arrow_blue_desktop" alt="">
                         </picture>
+
                         <div>
                             <h4>Get Offers</h4>
                             <ul>
@@ -389,7 +399,7 @@
                 <div class="bank_feature">
                     <div>
                         <div>
-                            <h4>Financing as you know it</h4>
+                            <h3>Financing as you know it</h3>
                         </div>
                         <div class="trueScale_logo">
                             <img src="./assets/images/logo-blue.svg" alt="">
@@ -401,7 +411,7 @@
                             <p> 2–4 week funding timeline</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>24-hour time to funds</h4>
                         </div>
                     </div>
@@ -411,7 +421,7 @@
                             <p>Hard credit inquiry</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>Soft credit pull only</h4>
                         </div>
                     </div>
@@ -422,7 +432,7 @@
                             <p>Lengthy paperwork & back-and-forth phone calls for days.</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>60-second online application</h4>
                         </div>
                     </div>
@@ -433,7 +443,7 @@
                             <p>Collateral, co-signers, and personal guarantees are standard</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>No collateral or personal guarantee required</h4>
                         </div>
                     </div>
@@ -444,7 +454,7 @@
                             <p>1-2 loan types</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>30+ funding solutions</h4>
                         </div>
                     </div>
@@ -455,7 +465,7 @@
                             <p>High entry barrier</p>
                         </div>
                         <div>
-                            <img src="./assets/images/check-black.svg" alt="">
+                            <img src="./assets/images/check-blue.svg" alt="">
                             <h4>Minimum requirements</h4>
                         </div>
                     </div>
@@ -645,7 +655,8 @@
                         <li><img src="./assets/images/check-blue.svg" alt=""> Personalized support or 100% online</li>
                     </ul>
                     <div class="pressure_btn">
-                        <a href="#" class="common_btn">See my options</a>
+                        <a href="#" class="common_btn">Get my offer</a>
+                        <p class="for_medium"><strong>SSN not required •</strong> Apply in under 60 seconds</p>
                     </div>
                 </div>
             </div>

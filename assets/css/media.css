@@ -1,4 +1,18 @@
+@media (min-width: 991.2px) and (max-width:1220px) {
+    html {
+        font-size: .83vw;
+    }
+
+    .container {
+        max-width: 120rem;
+        padding-inline: 3rem;
+    }
+}
+
 @media (max-width:991.98px) {
+    html {
+        font-size: 1.303vw;
+    }
 
     h2 {
         font-size: 3.8rem;
@@ -10,6 +24,7 @@
 
     .container {
         padding-inline: 2.4rem;
+        max-width: 76.8rem;
     }
 
     .for_medium {
@@ -20,8 +35,105 @@
         display: none !important;
     }
 
+    .for_small {
+        display: none !important;
+    }
+
+    .common_btn {
+        line-height: 1.25;
+    }
+
+    .py_80 {
+        padding-block: 6rem;
+    }
+
+    .common_title {
+        margin-bottom: 2.4rem;
+    }
+
+    .common_title h2 {
+        font-size: 3.8rem;
+        margin-bottom: .8rem;
+    }
+
+    .common_title h2 span {
+        font-size: 4.6rem;
+    }
+
+    .common_title p {
+        font-size: 1.6rem;
+    }
+
+    body.menu_active header {
+        background-color: var(--white);
+        transition: .1s ease-in;
+        position: fixed;
+    }
+
+    #main_nav {
+        background-color: var(--white);
+        position: fixed;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding-inline: 2.4rem;
+        padding-top: 1.6rem;
+        padding-bottom: 4rem;
+        top: -100%;
+        transition: .4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #main_nav.active {
+        top: 7.2rem;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #main_nav ul {
+        display: block;
+        column-count: 2;
+    }
+
+    #main_nav ul li {
+        margin-bottom: 2.4rem;
+    }
+
+    #main_nav ul a {
+        color: var(--black);
+        text-align: left;
+        font-size: 1.8rem !important;
+        padding-inline: 0;
+    }
+
+    #main_nav .common_btn {
+        font-size: 1.8rem;
+    }
+
+    #hamburger img {
+        width: 100%;
+        max-width: 3.2rem;
+    }
+
+    #hamburger.active .hamburger_img {
+        display: none;
+    }
+
+    #hamburger .close_img {
+        display: none;
+    }
+
+    #hamburger.active .close_img {
+        display: block;
+    }
+
     .banner {
         padding: 43.3rem 0 8rem;
+    }
+
+    .banner::before {
+        display: none;
     }
 
     .home_row {
@@ -37,9 +149,18 @@
         justify-content: center;
     }
 
+    .trust-logo {
+        display: block;
+    }
+
     .home_content ul {
         width: fit-content;
         margin-inline: auto;
+        text-align: left;
+    }
+
+    .testimonial {
+        padding-bottom: 6rem;
     }
 
     .testimonial_grid {
@@ -47,9 +168,26 @@
         gap: 3.2rem;
     }
 
+    .testi_author h4 {
+        font-size: 1.6rem;
+    }
+
+    .testi_author p {
+        font-size: 1.4rem;
+    }
+
+    .friction_video {
+        max-height: 41rem;
+    }
+
+    .friction_video .thumbnail_img img {
+        max-height: 41rem;
+    }
+
     .around_grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 1.6rem;
+        padding-top: .8rem;
     }
 
     .around_grid>div:last-child {
@@ -60,6 +198,10 @@
         padding: 3.2rem;
         display: flex;
         gap: 2rem;
+    }
+
+    .around_card::after {
+        top: calc(100% - 2rem);
     }
 
     .around_card>div:first-child {
@@ -94,6 +236,14 @@
         margin-bottom: 2.4rem;
     }
 
+    .around_card.long>div:not(:first-child) {
+        align-items: flex-start;
+    }
+
+    .around_card.long img {
+        width: 4rem;
+    }
+
     .smarter {
         height: 90rem;
         background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
@@ -108,12 +258,24 @@
     }
 
     .smarter::before {
-        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 18%) 100%);
         opacity: 1;
     }
 
     .smarter_text {
         text-align: center;
+    }
+
+    .smart_card {
+        padding: 2.4rem;
+    }
+
+    .smart_card h4 {
+        font-size: 2rem;
+    }
+
+    .smart_card p {
+        font-size: 1.6rem;
     }
 
     .step_grid {
@@ -122,6 +284,8 @@
         margin-inline: auto;
         padding-left: 2rem;
         padding-right: 4rem;
+        padding-top: 1.6rem;
+        gap: 4rem;
     }
 
     .step_grid>div {
@@ -136,17 +300,19 @@
         justify-content: space-between;
         margin-left: auto;
         position: relative;
+        gap: 0;
     }
 
     .arrow_beige_desktop {
         left: auto;
         right: -3rem;
-        top: -50%;
+        top: -12rem;
+        width: 10rem;
     }
 
     .arrow_blue_desktop {
         top: auto;
-        bottom: -4rem;
+        bottom: -8rem;
         left: auto;
         right: 0;
         transform: translateX(0);
@@ -154,11 +320,48 @@
 
     .qualify_list {
         flex-wrap: wrap;
+        margin-top: 4.8rem;
     }
 
     .qualify_list>li:first-child {
         width: 100%;
         justify-content: center;
+    }
+
+    .bank_feature {
+        margin-inline: -2.4rem;
+    }
+
+    .bank_feature>div {
+        padding-block: 2rem;
+    }
+
+    .bank_feature>div>div {
+        padding-inline: 3.2rem !important;
+    }
+
+    .bank_feature h3 {
+        font-size: 2rem;
+    }
+
+    .bank_feature h4 {
+        font-size: 1.8rem;
+    }
+
+    .bank_feature p {
+        font-size: 1.8rem;
+    }
+
+    .trustpilot {
+        margin-bottom: 1rem;
+    }
+
+    .reviewSlider .swiper-slide {
+        width: 60rem;
+    }
+
+    .faq_grid {
+        gap: 4rem;
     }
 
     .faq_grid>div:first-child {
@@ -179,6 +382,7 @@
         height: 91rem;
         align-items: flex-end;
         padding-bottom: 8rem;
+        margin-top: 6rem;
     }
 
     .pressure_content {
@@ -216,11 +420,41 @@
         justify-content: space-between;
         flex-direction: row;
     }
+
+    .footer_bottom {
+        padding-top: 4rem;
+        margin-top: 4rem;
+    }
 }
 
 @media (max-width:576px) {
+    html {
+        font-size: 2.565vw;
+    }
+
     h2 {
         font-size: 2.8rem;
+    }
+
+    .py_80 {
+        padding-block: 4rem;
+    }
+
+    .common_title h2 {
+        font-size: 2.8rem;
+        margin-bottom: .4rem;
+    }
+
+    .common_title h2 span {
+        font-size: 3.6rem;
+    }
+
+    .common_title p {
+        padding-inline: 1rem;
+    }
+
+    .for_small {
+        display: block !important;
     }
 
     h2 span {
@@ -235,6 +469,52 @@
         display: block !important;
     }
 
+    #main_nav.active {
+        top: 5.8rem;
+    }
+
+    #main_nav ul {
+        display: block;
+        column-count: 1;
+    }
+
+    .header_btn {
+        display: none;
+    }
+
+    .banner {
+        padding: 30.7rem 0 6rem;
+    }
+
+    .trustpilot-home {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .trust-logo {
+        display: none;
+        margin-inline: auto;
+        height: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .home_content h1 {
+        font-size: 3.28rem;
+    }
+
+    .home_content ul li {
+        font-size: 1.6rem;
+    }
+
+    .home_content .common_btn {
+        margin-top: 1.4rem;
+    }
+
+    .testimonial {
+        padding-bottom: 4rem;
+        padding-top: 3.2rem;
+    }
+
     .testimonial_grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 4rem;
@@ -247,11 +527,21 @@
     }
 
     .friction_video .thumbnail_img img {
+        height: 36rem;
+        object-fit: cover;
         border-radius: 0;
-        max-height: 36rem;
+    }
+
+    .friction_video .play_icon {
+        width: 8rem;
+    }
+
+    .friction_video .video_text p {
+        font-size: 1.6rem;
     }
 
     .around_card {
+        gap: 0rem;
         padding: 2.4rem !important;
         flex-direction: column;
     }
@@ -274,10 +564,56 @@
         justify-content: start;
     }
 
+    .around_card h4 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .around_card p {
+        font-size: 1.6rem;
+    }
+
+    .verified_img {
+        width: 4.8rem;
+    }
+
+    .around_card h3 {
+        font-size: 3.4rem;
+    }
+
+    .around_card.long h4 {
+        font-size: 2.2rem;
+    }
+
+    .around_btn .common_btn {
+        width: 100%;
+    }
+
+    .around ul {
+        display: block;
+        width: max-content;
+        margin-inline: auto;
+    }
+
+    .around ul li:not(:last-child) {
+        margin-bottom: .8rem;
+    }
+
+    .smarter_text h2 {
+        text-wrap: balance;
+    }
+
+    .smarter_text p {
+        margin-top: .4rem;
+        margin-bottom: 1.64rem;
+        text-wrap: balance;
+    }
+
     .smarter {
         height: 72rem;
         background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
         padding-top: 26.5rem;
+        margin-block: 4rem;
     }
 
     .smarter_img {
@@ -286,8 +622,13 @@
     }
 
     .smarter::before {
-        background: linear-gradient(360deg, #000000 0%, rgb(21 26 29 / 38%) 100%);
+        background: linear-gradient(360deg, #161A1D 40%, rgb(21 26 29 / 0%) 100%);
         opacity: 1;
+    }
+
+    .step_grid {
+        padding-top: 0;
+        gap: 6rem;
     }
 
     .step_grid>div {
@@ -302,25 +643,181 @@
 
     .step_grid .step_img {
         margin-inline: auto;
+        margin-bottom: 1.6rem;
+    }
+
+    .step_grid h4 {
+        font-size: 2rem;
+    }
+
+    .step_grid li {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .arrow_beige_desktop {
+        left: auto;
+        right: -8rem;
+        top: -12rem;
+        width: 10rem;
     }
 
     .arrow_blue_desktop {
         top: auto;
-        bottom: 0;
-        left: 0;
+        bottom: -8rem;
+        left: -2rem;
         right: auto;
     }
 
+    .qualify_list {
+        margin-top: 4rem;
+        max-width: 28rem;
+        display: block;
+        margin-inline: auto;
+    }
+
+    .qualify_list>li:first-child {
+        justify-content: start;
+    }
+
+    .qualify_list li {
+        font-weight: 500;
+    }
+
+    .qualify_list li:not(:last-child) {
+        margin-bottom: .8rem;
+    }
+
+    .step_btn {
+        margin-top: 2.4rem;
+    }
+
+    .step_btn .common_btn {
+        width: 100%;
+    }
+
+    .bank .common_title {
+        max-width: 30rem;
+    }
+
+    .bank_feature {
+        margin-top: 2.4rem;
+        margin-inline: -2.4rem;
+    }
+
+    .bank_feature h3 {
+        text-align: center;
+        font-size: 1.4rem;
+        max-width: 9rem;
+        margin: auto;
+    }
+
+    .bank_feature>div {
+        padding-block: 1.6rem;
+    }
+
+    .bank_feature>div>div {
+        padding-inline: 1.6rem !important;
+        display: block;
+        text-align: center;
+    }
+
+    .bank_feature p {
+        font-size: 1.6rem;
+    }
+
+    .bank_feature h4 {
+        font-size: 1.6rem;
+    }
+
+    .bank_feature img {
+        width: 2.8rem;
+        margin-bottom: .4rem;
+    }
+
+    .review .common_title h2 {
+        font-size: 2.8rem;
+        margin-bottom: .4rem;
+        text-wrap: balance;
+    }
+
+    .trustpilot {
+        flex-wrap: wrap;
+    }
+
+    .reviewSlider {
+        padding-top: 1.4rem;
+    }
+
     .reviewSlider .swiper-slide {
-        max-width: 45rem;
+        max-width: 35rem;
+    }
+
+    .review_card p {
+        font-size: 1.4rem;
+    }
+
+    .review_author h4 {
+        font-size: 1.6rem;
+    }
+
+    .review_card h3 {
+        font-size: 1.8rem;
+    }
+
+    .review_btn {
+        margin-top: 1rem;
+        padding-inline: 2.4rem;
+    }
+
+    .review_btn p {
+        margin-top: 1.2rem;
+    }
+
+    .review_btn .common_btn {
+        width: 100%;
+    }
+
+    .faq_left h2 {
+        text-wrap: balance;
+    }
+
+    .faq_question {
+        padding-inline: 0rem;
+    }
+
+    .faq_question h3 {
+        font-size: 2rem;
+    }
+
+    .faq_question p {
+        font-size: 1.6rem;
+        line-height: 1.6;
     }
 
     .faq_grid {
         align-items: stretch;
     }
 
+    .pressure {
+        margin-top: 2rem;
+        height: 64rem;
+        padding-bottom: 6rem;
+    }
+
+    .pressure_content ul {
+        padding-inline: 0;
+        width: max-content;
+        margin-inline: auto;
+    }
+
     .pressure_content ul li {
         font-size: 1.6rem;
+        text-align: left;
+    }
+
+    footer {
+        padding-block: 4rem;
     }
 
     .footer_grid {
@@ -345,6 +842,14 @@
         width: 100%;
     }
 
+    footer ul a {
+        font-size: 1.6rem;
+    }
+
+    .footer_btn {
+        border-color: var(--white);
+    }
+
     .copyright {
         display: none;
     }
@@ -353,5 +858,10 @@
         flex-direction: column;
         text-align: center;
         align-items: stretch;
+    }
+
+    .footer_bottom {
+        padding-top: 3.2rem;
+        margin-top: 3.2rem;
     }
 }

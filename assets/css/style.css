@@ -46,6 +46,7 @@ button,
 a {
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
 }
 
 button {
@@ -168,6 +169,11 @@ header {
     border-bottom: .1rem solid rgba(255, 255, 255, .2);
 }
 
+.logo {
+    height: 2.5rem;
+    mix-blend-mode: difference;
+}
+
 .header_content nav ul {
     display: flex;
 }
@@ -183,6 +189,12 @@ header {
 .header_content nav a:hover,
 .header_content nav a.active {
     color: var(--primaryColor);
+}
+
+.header_btn_wrap {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
 }
 
 .header_btn {
@@ -218,7 +230,7 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(270deg, rgba(21, 26, 29, 0) 0%, rgba(21, 26, 29, 0) 40%, rgba(21, 26, 29, 0.9) 60%, #151B1D 100%);
-    z-index: -2;
+    z-index: 1;
 }
 
 .banner::after {
@@ -228,7 +240,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     background-image: url(../images/home_shape.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -443,6 +455,10 @@ img {
     width: max-content;
 }
 
+.friction_video .play_icon {
+    width: 9.6rem;
+}
+
 .friction_video .video_text p {
     font-size: 2.2rem;
     font-weight: 600;
@@ -521,6 +537,10 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+
+.around_card.long p {
+    color: var(--black);
 }
 
 .around_card.long>div:not(:first-child) {
@@ -624,6 +644,10 @@ img {
     height: 100%;
 }
 
+.smart_card img {
+    width: 3.2rem;
+}
+
 .smart_card h4 {
     font-size: 2.2rem;
     font-weight: 600;
@@ -719,6 +743,7 @@ img {
     font-size: 2.2rem;
     line-height: 1.5;
     margin-bottom: .4rem;
+    font-weight: 600;
 }
 
 .step_grid ul {
@@ -794,7 +819,7 @@ img {
 .bank_feature>div>div {
     display: flex;
     gap: 1.2rem;
-    width: 100%;
+    width: 50%;
     align-items: self-start;
 }
 
@@ -812,6 +837,11 @@ img {
     font-size: 2.2rem;
     color: var(--black);
     line-height: 1.5;
+}
+
+.bank_feature h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
 .bank_feature h4 {
@@ -947,13 +977,6 @@ img {
     letter-spacing: -.04em;
 }
 
-.faq_left h2 span {
-    font-family: var(--secondaryFont);
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 400;
-}
-
 .faq_left p {
     margin-top: 1.2rem;
     margin-bottom: 2.4rem;
@@ -990,6 +1013,7 @@ img {
     display: flex;
     align-items: center;
     position: relative;
+    margin-top: 8rem;
 }
 
 .pressure_img {
@@ -1030,6 +1054,17 @@ img {
 
 .pressure_content ul li img {
     width: 2rem;
+}
+
+.pressure_btn p {
+    color: var(--black);
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.pressure_btn p strong {
+    font-weight: 700;
 }
 
 /* footer */
