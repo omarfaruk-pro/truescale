@@ -105,15 +105,21 @@
         text-align: left;
         font-size: 1.8rem !important;
         padding-inline: 0;
+        mix-blend-mode: normal;
     }
 
     #main_nav .common_btn {
         font-size: 1.8rem;
     }
 
+    #hamburger {
+        width: 3.2rem;
+    }
+
     #hamburger img {
         width: 100%;
         max-width: 3.2rem;
+        mix-blend-mode: difference;
     }
 
     #hamburger.active .hamburger_img {
@@ -126,6 +132,8 @@
 
     #hamburger.active .close_img {
         display: block;
+        width: 2.8rem;
+        mix-blend-mode: darken;
     }
 
     .banner {
@@ -469,6 +477,10 @@
         display: block !important;
     }
 
+    #main_nav {
+        padding-top: 2.2rem;
+    }
+
     #main_nav.active {
         top: 5.8rem;
     }
@@ -499,7 +511,7 @@
     }
 
     .home_content h1 {
-        font-size: 3.28rem;
+        font-size: 3.2rem;
     }
 
     .home_content ul li {
@@ -703,6 +715,7 @@
     .bank_feature {
         margin-top: 2.4rem;
         margin-inline: -2.4rem;
+        overflow-x: hidden;
     }
 
     .bank_feature h3 {
@@ -733,6 +746,19 @@
     .bank_feature img {
         width: 2.8rem;
         margin-bottom: .4rem;
+    }
+
+    .bank_feature::before {
+        border-radius: 1rem 0 0 0;
+    }
+
+    .bank_shape {
+        width: 20rem !important;
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        height: 1rem;
+        object-fit: cover;
     }
 
     .review .common_title h2 {
@@ -863,5 +889,51 @@
     .footer_bottom {
         padding-top: 3.2rem;
         margin-top: 3.2rem;
+    }
+
+    .modal {
+        padding: 0;
+    }
+
+    .modal_logo {
+        display: inline;
+        position: absolute;
+        top: 2rem;
+        left: 2.4rem;
+        height: 2.5rem;
+        mix-blend-mode: difference;
+    }
+
+    .modal_dialog {
+        height: 100dvh;
+        padding: 2.4rem;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    .close_icon {
+        top: 2rem;
+    }
+
+    .contact_modal h3 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .contact_modal form {
+        margin-top: 1.6rem;
+        gap: 1.6rem;
+    }
+
+    .modal.thank .thank_body {
+        max-width: 26rem;
+        margin-inline: auto;
+    }
+
+    .modal.thank .thank_body h3 {
+        text-wrap: balance;
     }
 }

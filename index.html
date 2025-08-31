@@ -12,23 +12,23 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header_content">
                 <a href="/" class="logo_wrap"><img class="logo" src="./assets/images/logo-white.svg" alt=""></a>
                 <nav class="" id="main_nav">
                     <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Option</a></li>
-                        <li><a href="#">How to Qualify</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#step">How it works</a></li>
+                        <li><a href="#around">Benefits</a></li>
+                        <li><a href="#smarter">Option</a></li>
+                        <li><a href="#bank">How to Qualify</a></li>
+                        <li><a href="#testimonial">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
-                    <a href="#" class="common_btn for_medium">Get my offer</a>
+                    <button class="common_btn open_popup for_medium">Get my offer</button>
                 </nav>
                 <div class="header_btn_wrap">
-                    <a href="#" class="header_btn">Get my offer</a>
+                    <button class="header_btn open_popup">Get my offer</button>
                     <button class="for_medium" id="hamburger">
                         <img src="./assets/images/burger-white.svg" class="hamburger_img" alt="">
                         <img src="./assets/images/close-black.svg" class="close_img" alt="">
@@ -65,7 +65,7 @@
                                 <li>Same-day funding, when you need it.</li>
                                 <li>No collateral. No personal guarantees.</li>
                             </ul>
-                            <a href="#" class="common_btn">Get my offer</a>
+                            <button class="common_btn open_popup">Get my offer</button>
                             <p><strong>SSN not required •</strong> Apply in under 60 seconds</p>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
         </section>
 
         <!-- testimonial -->
-        <section class="testimonial">
+        <section class="testimonial" id="testimonial">
             <div class="container">
                 <div class="testimonial_grid">
                     <div>
@@ -150,7 +150,7 @@
         </section>
 
         <!-- around -->
-        <section class="around py_80">
+        <section class="around py_80" id="around">
             <div class="container">
                 <div class="common_title">
                     <h2>We build <span>around you</span> — not the other way around</h2>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="around_btn">
-                    <a href="#" class="common_btn">Get my offer</a>
+                    <button class="common_btn open_popup">Get my offer</button>
                 </div>
                 <ul>
                     <li><img src="./assets/images/check-blue.svg" alt=""> ~24h time-to-fund</li>
@@ -230,7 +230,7 @@
         </section>
 
         <!-- smarter -->
-        <section class="smarter">
+        <section class="smarter" id="smarter">
             <picture>
                 <source media="(min-width: 992px)" srcset="./assets/images/every-business-desktop.jpg">
                 <source media="(min-width: 576.2px) and (max-width: 991px)"
@@ -243,7 +243,7 @@
                     <h2>A smarter fit for <span>every</span> business</h2>
                     <p>We offer more than just loans. Choose from over 30 funding paths.</p>
                     <div class="smarter_btn">
-                        <a href="#" class="common_btn">See my options</a>
+                        <button class="common_btn open_popup">See my options</button>
                     </div>
                 </div>
             </div>
@@ -309,7 +309,7 @@
         </section>
 
         <!-- step -->
-        <section class="py_80 step">
+        <section class="py_80 step" id="step">
             <div class="container">
                 <div class="common_title">
                     <h2>Your funding in just <span>3 steps</span></h2>
@@ -383,13 +383,13 @@
                     <li><img src="./assets/images/check-black.svg" alt=""> 500+ personal credit score</li>
                 </ul>
                 <div class="step_btn">
-                    <a href="#" class="common_btn">Get my offer</a>
+                    <button class="common_btn open_popup">Get my offer</button>
                 </div>
             </div>
         </section>
 
         <!-- bank -->
-        <section class="py_80 bank">
+        <section class="py_80 bank" id="bank">
             <div class="container">
                 <div class="common_title">
                     <h2>We're not a bank. <span>We're Better</span></h2>
@@ -397,6 +397,7 @@
                 </div>
 
                 <div class="bank_feature">
+                    <img src="./assets/images/brush-line-beige-desktop.svg" class="bank_shape" alt="">
                     <div>
                         <div>
                             <h3>Financing as you know it</h3>
@@ -475,7 +476,7 @@
         </section>
 
         <!-- review -->
-        <section class="py_80 review">
+        <section class="py_80 review" id="review">
             <div class="container">
                 <div class="common_title">
                     <h2>From struggling to scaling <span>– fast</span></h2>
@@ -601,19 +602,19 @@
             </div>
 
             <div class="review_btn">
-                <a href="#" class="common_btn">Get my offer</a>
+                <button class="common_btn open_popup">Get my offer</button>
                 <p><strong>SSN not required</strong> • Apply in under 60 seconds</p>
             </div>
         </section>
 
         <!-- faq -->
-        <section class="faq py_80">
+        <section class="faq py_80" id="faq">
             <div class="container">
                 <div class="faq_grid">
                     <div class="faq_left">
                         <h2>Smart Questions. <span>Honest Answers.</span></h2>
                         <p>Quick answers to help you move forward with confidence.</p>
-                        <a href="#" class="common_btn_2 for_large">Contact us</a>
+                        <button class="common_btn_2 open_popup for_large">Contact us</button>
                     </div>
                     <div class="faq_question">
                         <div>
@@ -634,7 +635,7 @@
                                 You’ll see all terms upfront.</p>
                         </div>
                     </div>
-                    <a href="#" class="common_btn_2 for_medium">Contact us</a>
+                    <button class="common_btn_2 open_popup for_medium">Contact us</button>
                 </div>
             </div>
         </section>
@@ -655,7 +656,7 @@
                         <li><img src="./assets/images/check-blue.svg" alt=""> Personalized support or 100% online</li>
                     </ul>
                     <div class="pressure_btn">
-                        <a href="#" class="common_btn">Get my offer</a>
+                        <button class="common_btn open_popup">Get my offer</button>
                         <p class="for_medium"><strong>SSN not required •</strong> Apply in under 60 seconds</p>
                     </div>
                 </div>
@@ -666,25 +667,37 @@
     <!-- modal -->
     <div class="modal contact_modal" id="contact_modal">
         <div class="modal_dialog">
-            <div class="modal_body">
+            <img src="./assets/images/logo-black.svg" alt="" class="modal_logo">
+            <button type="button" id="close_popup" class="close_icon"><img src="./assets/images/close-black.svg"
+                    alt=""></button>
+            <img src="./assets/images/brush-shape-2.svg" class="modal_shape" alt="">
+            <div class="modal_body form_body">
                 <h3>Let’s check what you qualify for</h3>
-                <form action="#">
+                <form action="#" id="contact_form">
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Name">
+                        <input type="text" id="name" name="name" placeholder="Name">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email">
                     </div>
                     <div>
                         <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" placeholder="Phone number">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number">
                     </div>
                     <div>
                         <button class="common_btn">Get my offer</button>
                     </div>
                 </form>
+            </div>
+            <div class="modal_body thank_body">
+                <div class="thank_img">
+                    <img src="./assets/images/spot-beige.svg" alt="">
+                    <img src="./assets/images/confetti.svg" alt="">
+                </div>
+                <h3>Thank you for your trust!</h3>
+                <p>A funding specialist will reach out within the hour.</p>
             </div>
         </div>
     </div>
@@ -701,18 +714,18 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Options</a></li>
-                        <li><a href="#">How to Qualify</a></li>
+                        <li><a href="#step">How it works</a></li>
+                        <li><a href="#around">Benefits</a></li>
+                        <li><a href="#smarter">Options</a></li>
+                        <li><a href="#bank">How to Qualify</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#">Trustpilot</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#review">Trustpilot</a></li>
+                        <li><a href="#testimonial">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a class="open_popup">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -722,7 +735,7 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="#" class="footer_btn">Get my offer</a>
+                    <button class="footer_btn open_popup">Get my offer</button>
                     <p class="copyright">© truescale LLC. 2025</p>
                 </div>
             </div>

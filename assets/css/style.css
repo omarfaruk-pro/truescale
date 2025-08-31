@@ -19,6 +19,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -162,6 +163,12 @@ header {
     z-index: 10;
 }
 
+header.scrolled {
+    position: fixed;
+    background-color: var(--white);
+}
+
+
 .header_content {
     display: flex;
     grid-area: 1rem;
@@ -186,6 +193,7 @@ header {
     color: var(--white);
     font-size: 1.4rem;
     transition: 0.3s;
+    mix-blend-mode: difference;
 }
 
 .header_content nav a:hover,
@@ -209,6 +217,7 @@ header {
     border-radius: 5rem;
     line-height: 1.29;
     transition: 0.3s;
+    mix-blend-mode: difference;
 }
 
 .header_btn:hover {
@@ -546,6 +555,10 @@ img {
     color: var(--black);
 }
 
+.around_card.long>div:first-child p {
+    opacity: .6;
+}
+
 .around_card.long>div:not(:first-child) {
     display: flex;
     justify-content: space-between;
@@ -791,6 +804,14 @@ img {
 .bank_feature {
     margin-top: 4rem;
     position: relative;
+}
+
+.bank_shape {
+    width: 50% !important;
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    height: 1rem;
 }
 
 .bank_feature::before {
@@ -1165,11 +1186,15 @@ footer ul a:hover {
     top: 0;
     left: 0;
     z-index: 50;
-    display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(.6rem);
+    padding: 2rem;
     display: none;
+}
+
+.modal.active {
+    display: flex;
 }
 
 .modal_dialog {
@@ -1179,6 +1204,110 @@ footer ul a:hover {
     background-color: var(--white);
     padding: 5rem 6rem;
     border-radius: 1.2rem;
+    position: relative;
 }
 
-.contact_modal h3 {}
+.modal_logo {
+    display: none;
+}
+
+.close_icon {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+}
+
+.close_icon img {
+    width: 1.65rem;
+}
+
+.modal_shape {
+    width: 100%;
+    position: absolute;
+    bottom: -.6rem;
+    left: 0;
+}
+
+.contact_modal h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -.04em;
+}
+
+.contact_modal form {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_modal label {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    display: block;
+}
+
+.contact_modal input {
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .8rem;
+}
+
+.contact_modal input:focus {
+    outline: none;
+}
+
+.contact_modal .common_btn {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.modal_body.thank_body {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.thank_img {
+    height: 9.6rem;
+    width: 9.6rem;
+    position: relative;
+    margin-inline: auto;
+}
+
+.thank_img img {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.thank_img img:last-child {
+    top: -.6rem;
+}
+
+.thank_body {
+    display: none;
+}
+
+.thank_body h3 {
+    margin-bottom: .8rem;
+}
+
+.thank_body p {
+    font-size: 1.8rem;
+}
+
+.modal.thank .form_body {
+    display: none;
+}
+
+.modal.thank .thank_body {
+    display: block;
+}
