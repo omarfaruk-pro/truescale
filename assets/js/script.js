@@ -39,7 +39,6 @@ let body = document.querySelector('body');
         let form = e.target;
         let formData = new FormData(form);
         let formObj = Object.fromEntries(formData.entries());
-        console.log(formObj);
         contactForm.reset();
         popup.classList.add('thank');
     })
@@ -60,6 +59,65 @@ let body = document.querySelector('body');
             header.classList.remove('scrolled');
         } else {
             header.classList.add('scrolled');
+        }
+    });
+}
+
+{
+    const scrollLinks = document.querySelectorAll('.scroll, #main_nav a, .footer_grid ul a');
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetEl = document.getElementById(targetId);
+
+            if (targetEl) {
+                // Dynamically get header height
+                const header = document.querySelector('header'); // or specific header selector
+                const headerHeight = header ? header.offsetHeight : 0;
+
+                const elementPosition = targetEl.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - headerHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+{
+    const videoLink = document.querySelector('.play');
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoFrame');
+    const closeBtn = document.querySelector('.close');
+
+    videoLink.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Extract YouTube video ID from URL
+        const videoURL = this.getAttribute('href');
+        const videoId = videoURL.split('v=')[1].split('&')[0];
+
+        // Use embed URL
+        const embedURL = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+        iframe.setAttribute('src', embedURL);
+
+        modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = "none";
+        iframe.setAttribute('src', ''); // Stop video when modal closes
+    });
+
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            iframe.setAttribute('src', '');
         }
     });
 }
